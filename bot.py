@@ -45,15 +45,14 @@ def handle_main_buttons(message):
     message_file_path = file_button_correlation[message.text]
     text_from_file = get_text_from_file(message_file_path)
     username = message.from_user.full_name
-    common_text = f"<b>Привіт, {username},</b>"
 
     if message.text == study_button_text:
         text_from_file = (
-            f"{common_text} {text_from_file}\n\n{study_link}\n\n"
+            f"<b>Привіт, {username},</b> {text_from_file}\n\n{study_link}\n\n"
             f"{additional_text}"
         )
     elif message.text == consultation_button_text:
-        text_from_file = f"{common_text} {text_from_file}"
+        text_from_file = f"<b>Привіт, {username},</b> {text_from_file}"
 
     bot.send_message(
         message.chat.id,

@@ -1,7 +1,9 @@
 from config import Config
-from keyboards import study_button_text, buy_study_button_text, \
-    consultation_button_text, buy_consultation_button_text, study_keyboard, \
-    home_keyboard, consultation_keyboard
+from keyboards import (
+    study_button_text, buy_study_button_text, consultation_button_text,
+    buy_consultation_button_text, study_keyboard, home_keyboard,
+    consultation_keyboard
+)
 
 link_text = "📋Повна структура навчання"
 link_url = "https://teletype.in/@taras_tseya/xpOIWvtkCZ0"
@@ -20,7 +22,7 @@ def get_text_from_file(file_path: str) -> str:
 
 
 file_button_correlation = {
-    study_button_text: Config.STUDY_TEXT_FILE,
+    study_button_text: Config.HOME_TEXT_FILE,
     buy_study_button_text: Config.BUY_STUDY_TEXT_FILE,
     consultation_button_text: Config.CONSULTATION_TEXT_FILE,
     buy_consultation_button_text: Config.BUY_CONSULTATION_TEXT_FILE
