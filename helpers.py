@@ -24,8 +24,8 @@ file_button_correlation = {
 }
 
 button_keyboard_correlation = {
-    study_button_text: study_keyboard,
-    buy_study_button_text: home_keyboard,
+    study_button_text: home_keyboard,
+    buy_study_button_text: study_keyboard,
     consultation_button_text: consultation_keyboard,
-    buy_consultation_button_text: home_keyboard
+    buy_consultation_button_text: study_keyboard
 }
