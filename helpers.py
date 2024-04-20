@@ -6,6 +6,9 @@ from keyboards import study_button_text, buy_study_button_text, \
 link_text = "📋Повна структура навчання"
 link_url = "https://teletype.in/@taras_tseya/xpOIWvtkCZ0"
 study_link = f"<a href=\"{link_url}\">{link_text}</a>"
+additional_text = (
+    "<b>Щоб придбати навчання або ознайомитись з іншою інформацією 👇</b>"
+)
 
 
 def get_text_from_file(file_path: str) -> str:
